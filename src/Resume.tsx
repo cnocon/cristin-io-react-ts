@@ -1,11 +1,10 @@
 import React from "react";
-import { VStack } from "@chakra-ui/react";
 import { Page } from "./Page";
-import { FaBeer } from "react-icons/fa";
+import { BsBriefcase } from "react-icons/bs";
 
-export const Resume = () => {
+export const Resume: React.FC = () => {
   return (
-    <Page title="Résumé" icon={<FaBeer />}>
+    <Page title="Résumé" icon={<BsBriefcase />}>
       Resume Content
     </Page>
   );

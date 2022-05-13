@@ -10,12 +10,16 @@ import {
   DrawerContent,
   useDisclosure,
   DrawerCloseButton,
+  useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
 import { BsList } from "react-icons/bs";
 import { NavLink, useNavigate } from "react-router-dom";
+import { BsHouse, BsBriefcase, BsNewspaper, BsBook } from "react-icons/bs";
 
 export const MobileNavigation: React.FC = () => {
   const navigate = useNavigate();
+  const activeBgColor = useColorModeValue("gray.100", "gray.500");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -31,49 +35,87 @@ export const MobileNavigation: React.FC = () => {
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent p={4} position="relative" zIndex="1402">
+        <DrawerContent position="relative" zIndex="1402">
           <DrawerCloseButton />
 
           <List
             spacing={4}
-            __css={{ ".active": { textDecoration: "underline" } }}
+            __css={{
+              ".active": { backgroundColor: activeBgColor },
+            }}
           >
             <ListItem
               onClick={(e) => {
                 onClose();
               }}
             >
-              <Link as={NavLink} to="/" py={2} display="block">
-                Home
+              <Link
+                px={4}
+                as={NavLink}
+                to="/"
+                py={2}
+                display="flex"
+                alignItems="center"
+              >
+                <BsHouse />
+                &nbsp; Home
               </Link>
             </ListItem>
+            <Divider />
             <ListItem
               onClick={(e) => {
                 onClose();
               }}
             >
-              <Link as={NavLink} to="/resume" py={2} display="block">
-                Résumé
+              <Link
+                px={4}
+                as={NavLink}
+                to="/resume"
+                py={2}
+                display="flex"
+                alignItems="center"
+              >
+                <BsBriefcase />
+                &nbsp; Résumé
               </Link>
             </ListItem>
+            <Divider />
             <ListItem
               onClick={(e) => {
                 onClose();
               }}
             >
-              <Link as={NavLink} to="/portfolio" py={2} display="block">
-                Portfolio
+              <Link
+                px={4}
+                as={NavLink}
+                to="/portfolio"
+                py={2}
+                display="flex"
+                alignItems="center"
+              >
+                <BsBook />
+                &nbsp; Portfolio
               </Link>
             </ListItem>
+            <Divider />
             <ListItem
               onClick={(e) => {
                 onClose();
               }}
             >
-              <Link as={NavLink} to="/articles" py={2} display="block">
-                Articles
+              <Link
+                px={4}
+                as={NavLink}
+                to="/articles"
+                py={2}
+                display="flex"
+                alignItems="center"
+              >
+                <BsNewspaper />
+                &nbsp; Articles
               </Link>
             </ListItem>
+            <Divider />
           </List>
         </DrawerContent>
       </Drawer>

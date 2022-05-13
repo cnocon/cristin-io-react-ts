@@ -1,10 +1,10 @@
 import React from "react";
 import { Page } from "./Page";
-import { FaBeer } from "react-icons/fa";
+import { BsBook } from "react-icons/bs";
 
 export const Portfolio = () => {
   return (
-    <Page title="Portfolio" icon={<FaBeer />}>
+    <Page title="Portfolio" icon={<BsBook />}>
       Portfolio Content
     </Page>
   );
