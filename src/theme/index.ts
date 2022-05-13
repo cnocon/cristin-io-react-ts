@@ -11,13 +11,14 @@ export const theme = extendTheme({
       400: "#344556",
       500: "#293745",
       600: "#53575C",
-      700: "#53575C",
+      700: "#1e2b38",
       800: "#53575C",
     },
   },
   fonts: {
     heading: "Oswald, sans-serif",
     body: "Lato, sans-serif",
+    tertiary: "Pacifico, cursive",
   },
   components: {
     Link,

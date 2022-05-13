@@ -6,8 +6,8 @@ export const Heading = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     siteTitle: {
-      fontWeight: "500",
-      fontFamily: "Oswald",
+      fontWeight: "800",
+      fontFamily: "Open Sans",
       lineHeight: "1em",
     },
     siteSubtitle: {

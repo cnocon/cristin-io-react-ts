@@ -1,26 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   List,
   ListItem,
-  Flex,
-  Link,
-  Spacer,
   IconButton,
   Box,
   Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
+  Link,
   DrawerOverlay,
   DrawerContent,
   useDisclosure,
   DrawerCloseButton,
-  useColorModeValue,
 } from "@chakra-ui/react";
-import { BsX, BsList } from "react-icons/bs";
-
-import { useNavigate } from "react-router-dom";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { BsList } from "react-icons/bs";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export const MobileNavigation: React.FC = () => {
   const navigate = useNavigate();
@@ -34,29 +26,54 @@ export const MobileNavigation: React.FC = () => {
         fontSize="2xl"
         variant="ghosted"
         aria-label="Open Navigation"
+        mr={2}
       />
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <IconButton
-          color="white"
-          zIndex="1401" // chakra z-index for modals + 1
-          fontSize="4xl"
-          position="absolute"
-          right={0}
-          variant="ghosted"
-          top={0}
-          icon={<BsX color="white" />}
-          onClick={onClose}
-          aria-label="Close navigation"
-        />
-        <DrawerContent p={4} position="relative">
-          <List spacing={4}>
-            <ListItem onClick={(e) => navigate("/resume")}>Résumé</ListItem>
-            <ListItem onClick={(e) => navigate("/portfolio")}>
-              Portfolio
+        <DrawerContent p={4} position="relative" zIndex="1402">
+          <DrawerCloseButton />
+
+          <List
+            spacing={4}
+            __css={{ ".active": { textDecoration: "underline" } }}
+          >
+            <ListItem
+              onClick={(e) => {
+                onClose();
+              }}
+            >
+              <Link as={NavLink} to="/" py={2} display="block">
+                Home
+              </Link>
             </ListItem>
-            <ListItem onClick={(e) => navigate("/articles")}>Articles</ListItem>
+            <ListItem
+              onClick={(e) => {
+                onClose();
+              }}
+            >
+              <Link as={NavLink} to="/resume" py={2} display="block">
+                Résumé
+              </Link>
+            </ListItem>
+            <ListItem
+              onClick={(e) => {
+                onClose();
+              }}
+            >
+              <Link as={NavLink} to="/portfolio" py={2} display="block">
+                Portfolio
+              </Link>
+            </ListItem>
+            <ListItem
+              onClick={(e) => {
+                onClose();
+              }}
+            >
+              <Link as={NavLink} to="/articles" py={2} display="block">
+                Articles
+              </Link>
+            </ListItem>
           </List>
         </DrawerContent>
       </Drawer>

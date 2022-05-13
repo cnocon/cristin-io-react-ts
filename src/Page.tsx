@@ -1,18 +1,19 @@
 import React from "react";
-import { Heading, VStack, Box } from "@chakra-ui/react";
-import { Header } from "./components/layout/Header/Header";
+import { VStack, Box, Container } from "@chakra-ui/react";
 import { PageTitle } from "./PageTitle";
+
 export const Page: React.FC<{ title?: string; icon?: any }> = ({
   title,
   icon,
   children,
 }) => {
   return (
-    <VStack p={4} spacing={8} w="100%">
-      <Box w="100%">
+    <VStack py={4} spacing={8} w="100%">
+      <Container w="100%" maxW="8xl">
         <PageTitle title={title} icon={icon} />
+
         {children}
-      </Box>
+      </Container>
     </VStack>
   );
 };
