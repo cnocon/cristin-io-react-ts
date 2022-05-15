@@ -7,14 +7,14 @@ export const Heading = {
   variants: {
     siteTitle: {
       fontWeight: "800",
-      fontFamily: "Open Sans",
+      fontFamily: "Open Sans, sans-serif",
       lineHeight: "1em",
     },
     siteSubtitle: {
-      letterSpacing: "1px",
-      fontFamily: "Oswald",
+      fontFamily: "Oswald, sans-serif",
       fontWeight: "300",
       textTransform: "uppercase",
+      letterSpacing: "1px",
     },
   },
   // default values for `size` and `variant`
