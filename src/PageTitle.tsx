@@ -3,13 +3,10 @@ import {
   Heading,
   Divider,
   Box,
-  useColorModeValue,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
 } from "@chakra-ui/react";
-import { useLocation } from "react-router-dom";
 
 export const PageTitle: React.FC<{
   title?: string;
@@ -20,11 +17,18 @@ export const PageTitle: React.FC<{
     <Box mb={4}>
       <Breadcrumb>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
+          <BreadcrumbLink
+            textStyle="breadcrumb"
+            href="/"
+            textDecoration="underline"
+          >
+            Home
+          </BreadcrumbLink>
         </BreadcrumbItem>
-
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href="#">{title}</BreadcrumbLink>
+          <BreadcrumbLink textStyle="breadcrumb" href="#">
+            {title}
+          </BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
 

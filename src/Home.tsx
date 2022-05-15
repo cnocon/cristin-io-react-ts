@@ -1,7 +1,6 @@
 import React from "react";
 import { Page } from "./Page";
 import { Text, Heading, Center } from "@chakra-ui/react";
-// import { Elevator } from "./components/home/Elevator";
 
 export const Home: React.FC = () => {
   return (

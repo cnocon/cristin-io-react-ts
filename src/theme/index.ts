@@ -1,7 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Link } from "./components/Link";
 import { Heading } from "./components/Heading";
-
+import { typography } from "./foundations/typography";
 export const theme = extendTheme({
   colors: {
     brand: {
@@ -15,13 +15,9 @@ export const theme = extendTheme({
       800: "#53575C",
     },
   },
-  fonts: {
-    heading: "Oswald, sans-serif",
-    body: "Lato, sans-serif",
-    tertiary: "Pacifico, cursive",
-  },
   components: {
     Link,
     Heading,
   },
+  ...typography,
 });

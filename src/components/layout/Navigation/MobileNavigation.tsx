@@ -14,11 +14,10 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { BsList } from "react-icons/bs";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { BsHouse, BsBriefcase, BsNewspaper, BsBook } from "react-icons/bs";
 
 export const MobileNavigation: React.FC = () => {
-  const navigate = useNavigate();
   const activeBgColor = useColorModeValue("gray.100", "gray.500");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
