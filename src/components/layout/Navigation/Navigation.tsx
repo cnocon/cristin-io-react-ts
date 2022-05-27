@@ -59,6 +59,17 @@ export const Navigation: React.FC = () => {
       >
         Articles
       </Link>
+      <Link
+        as={NavLink}
+        to="/coursework"
+        mr={4}
+        px={2}
+        py={1}
+        borderRadius="base"
+        display="inline-block"
+      >
+        Coursework
+      </Link>
       <ColorModeSwitcher />
     </Flex>
   );

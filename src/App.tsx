@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home";
 import { Resume } from "./Resume";
 import { Portfolio } from "./Portfolio";
+import { Coursework } from "./Coursework";
 import { Articles } from "./Articles";
 
 export const App: React.FC = () => {
@@ -22,6 +23,7 @@ export const App: React.FC = () => {
               <Route path="resume" element={<Resume />} />
               <Route path="portfolio" element={<Portfolio />} />
               <Route path="articles" element={<Articles />} />
+              <Route path="coursework" element={<Coursework />} />
             </Routes>
           </Box>
 
