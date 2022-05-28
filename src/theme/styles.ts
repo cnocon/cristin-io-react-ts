@@ -1,4 +1,4 @@
-import { mode } from '@chakra-ui/theme-tools'
+import { mode } from '@chakra-ui/theme-tools' // eslint-disable-line
 
 export const styles = {
   global: (props) => ({

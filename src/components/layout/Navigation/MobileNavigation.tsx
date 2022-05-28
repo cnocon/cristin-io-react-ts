@@ -13,7 +13,6 @@ import {
   useColorModeValue,
   Divider,
 } from '@chakra-ui/react'
-import {} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
 import {
   BsList,

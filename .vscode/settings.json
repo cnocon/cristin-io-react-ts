@@ -9,5 +9,6 @@
   "better-comments.highlightPlainText": true,
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
-  "color-highlight.matchWords": true
+  "color-highlight.matchWords": true,
+  "editor.formatOnSave": true
 }

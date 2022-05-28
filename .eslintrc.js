@@ -11,13 +11,13 @@ module.exports = {
   //     node: true,
   //   },
   extends: [
-    // 'airbnb-typescript/base',
+    'prettier',
     'airbnb-typescript',
+    'airbnb-typescript/base',
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier',
   ],
   ignorePatterns: ['.eslintrc.js'], // Ignore itself to prevent TS errors
   plugins: ['prettier', 'eslint-plugin-import'],
