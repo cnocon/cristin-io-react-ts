@@ -1,23 +1,40 @@
-import React from "react";
-import { Page } from "./Page";
-import { Quote } from "./theme/components/Quote";
-import { Section } from "./theme/components/Section";
-import { Card } from "./theme/components/Card";
-import { Link, Box, Text, Heading, Center, SimpleGrid } from "@chakra-ui/react";
-import { FaConciergeBell } from "react-icons/fa";
+import React from 'react'
+import { Page } from './Page'
+import { Quote } from './theme/components/Quote'
+import { Section } from './theme/components/Section'
+import { Card } from './theme/components/Card'
+import {
+  Link,
+  Box,
+  Text,
+  Heading,
+  Center,
+  SimpleGrid,
+  Flex,
+  Icon,
+} from '@chakra-ui/react'
+import { FaConciergeBell } from 'react-icons/fa'
+import { BsHeartFill } from 'react-icons/bs'
 
 export const Home: React.FC = () => {
   return (
     <Page>
       <Heading size="4xl" my={8}>
         <Center w="100%">
-          <Text fontWeight="600" display="block">
+          <Text textStyle="strongDisplay" display="block">
             Hi.&nbsp;
           </Text>
 
-          <Text fontWeight="300" display="block">
-            How can I help you?
-          </Text>
+          <Flex>
+            <Text fontWeight="300" as="span" color="semantic.success">
+              This is what I
+            </Text>
+            &nbsp;
+            <Icon as={BsHeartFill} boxSize={14} />
+            <Text fontWeight="600" as="span">
+              .
+            </Text>
+          </Flex>
         </Center>
       </Heading>
       <Section icon={FaConciergeBell} title="Services">
@@ -25,7 +42,7 @@ export const Home: React.FC = () => {
           <Card
             title="Web Development"
             content={[
-              "This is my primary area of expertise after 10+ years in the field.",
+              'This is my primary area of expertise after 10+ years in the field.',
             ]}
             footer={
               <Text>
@@ -38,7 +55,7 @@ export const Home: React.FC = () => {
           <Card
             title="Code Tutoring"
             content={[
-              "I work with all ages and focus on teaching with compassion.",
+              'I work with all ages and focus on teaching with compassion.',
             ]}
             footer={
               <Text>
@@ -51,7 +68,7 @@ export const Home: React.FC = () => {
           <Card
             title="Career Mentor"
             content={[
-              "Leveraging my 15 years of experience, I can offer advice, skill development roadmaps, interview prep, and more.",
+              'Leveraging my 15 years of experience, I can offer advice, skill development roadmaps, interview prep, and more.',
             ]}
             footer={
               <Text>
@@ -79,5 +96,5 @@ export const Home: React.FC = () => {
         </Center>
       </Section>
     </Page>
-  );
-};
+  )
+}

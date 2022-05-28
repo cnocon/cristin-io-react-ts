@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Container, Flex, Divider, Text } from "@chakra-ui/react";
+import React from '.*'
+import { Box, Container, Flex, Divider, Text } from '.*'
 
 export const Footer: React.FC = () => {
   return (
@@ -13,5 +13,5 @@ export const Footer: React.FC = () => {
         </Container>
       </Box>
     </Box>
-  );
-};
+  )
+}

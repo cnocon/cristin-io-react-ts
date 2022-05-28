@@ -6,20 +6,20 @@ export const Heading = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     siteTitle: {
-      fontWeight: "800",
-      fontFamily: "Open Sans, sans-serif",
-      lineHeight: "1em",
+      fontWeight: '800',
+      fontFamily: 'Open Sans, sans-serif',
+      lineHeight: '1em',
     },
     siteSubtitle: {
-      fontFamily: "Oswald, sans-serif",
-      fontWeight: "300",
-      textTransform: "uppercase",
-      letterSpacing: "1px",
+      fontFamily: 'Oswald, sans-serif',
+      fontWeight: '300',
+      textTransform: 'uppercase',
+      letterSpacing: '1px',
     },
   },
   // default values for `size` and `variant`
   defaultProps: {
-    size: "",
-    variant: "",
+    size: '',
+    variant: '',
   },
-};
+}

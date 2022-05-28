@@ -1,6 +1,6 @@
-import React from "react";
-import { VStack, Container } from "@chakra-ui/react";
-import { PageTitle } from "./PageTitle";
+import React from 'react'
+import { VStack, Container } from '@chakra-ui/react'
+import { PageTitle } from './PageTitle'
 
 export const Page: React.FC<{ title?: string; icon?: any }> = ({
   title,
@@ -14,5 +14,5 @@ export const Page: React.FC<{ title?: string; icon?: any }> = ({
         {children}
       </Container>
     </VStack>
-  );
-};
+  )
+}

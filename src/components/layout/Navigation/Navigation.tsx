@@ -1,23 +1,23 @@
-import React from "react";
-import { Flex, Link, Spacer, useColorModeValue } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import React from 'react'
+import { Flex, Link, Spacer, useColorModeValue } from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
+import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 export const Navigation: React.FC = () => {
-  const bgColor = useColorModeValue("brand.700", "white");
-  const hoverColor = useColorModeValue("brand.700", "white");
-  const color = useColorModeValue("white", "brand.700");
+  const bgColor = useColorModeValue('brand.700', 'white')
+  const hoverColor = useColorModeValue('brand.700', 'white')
+  const color = useColorModeValue('white', 'brand.700')
   return (
     <Flex
       __css={{
-        ".active": {
+        '.active': {
           backgroundColor: bgColor,
           color: color,
-          backgroundImage: "none",
+          backgroundImage: 'none',
         },
-        ".active:hover": {
+        '.active:hover': {
           color: hoverColor,
-          backgroundColor: "transparent",
+          backgroundColor: 'transparent',
         },
       }}
       align="center"
@@ -72,5 +72,5 @@ export const Navigation: React.FC = () => {
       </Link>
       <ColorModeSwitcher />
     </Flex>
-  );
-};
+  )
+}

@@ -1,9 +1,9 @@
-import React from "react";
-import { BoxProps, Flex, Box, Icon, Text, Divider } from "@chakra-ui/react";
+import React from 'react'
+import { BoxProps, Flex, Box, Icon, Text, Divider } from '@chakra-ui/react'
 
 interface ISection extends BoxProps {
-  icon?: any;
-  title?: string;
+  icon?: any
+  title?: string
 }
 
 export const Section: React.FC<ISection> = ({
@@ -41,5 +41,5 @@ export const Section: React.FC<ISection> = ({
       </Flex>
       {children}
     </Box>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   List,
   ListItem,
@@ -12,9 +12,9 @@ import {
   DrawerCloseButton,
   useColorModeValue,
   Divider,
-} from "@chakra-ui/react";
-import {} from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+} from '@chakra-ui/react'
+import {} from 'react-icons/bs'
+import { NavLink } from 'react-router-dom'
 import {
   BsList,
   BsHouse,
@@ -22,11 +22,11 @@ import {
   BsNewspaper,
   BsBook,
   BsBookmark,
-} from "react-icons/bs";
+} from 'react-icons/bs'
 
 export const MobileNavigation: React.FC = () => {
-  const activeBgColor = useColorModeValue("gray.100", "gray.500");
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const activeBgColor = useColorModeValue('gray.100', 'gray.500')
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
     <Box>
@@ -47,12 +47,12 @@ export const MobileNavigation: React.FC = () => {
           <List
             spacing={4}
             __css={{
-              ".active": { backgroundColor: activeBgColor },
+              '.active': { backgroundColor: activeBgColor },
             }}
           >
             <ListItem
               onClick={(e) => {
-                onClose();
+                onClose()
               }}
             >
               <Link
@@ -70,7 +70,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
-                onClose();
+                onClose()
               }}
             >
               <Link
@@ -88,7 +88,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
-                onClose();
+                onClose()
               }}
             >
               <Link
@@ -106,7 +106,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
-                onClose();
+                onClose()
               }}
             >
               <Link
@@ -124,7 +124,7 @@ export const MobileNavigation: React.FC = () => {
 
             <ListItem
               onClick={(e) => {
-                onClose();
+                onClose()
               }}
             >
               <Link
@@ -144,5 +144,5 @@ export const MobileNavigation: React.FC = () => {
         </DrawerContent>
       </Drawer>
     </Box>
-  );
-};
+  )
+}

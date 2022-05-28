@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Heading,
   Divider,
@@ -6,11 +6,11 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
 export const PageTitle: React.FC<{
-  title?: string;
-  icon?: any;
+  title?: string
+  icon?: any
 }> = ({ title, icon, children }) => {
   // const iconColor = useColorModeValue("gray.300", "gray.700");
   return icon && title ? (
@@ -41,5 +41,5 @@ export const PageTitle: React.FC<{
       </Box>
       <Divider />
     </Box>
-  ) : null;
-};
+  ) : null
+}

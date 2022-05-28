@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "@chakra-ui/react";
-import { Page } from "./Page";
-import { BsPencil } from "react-icons/bs";
+import React from 'react'
+import { Link } from '@chakra-ui/react'
+import { Page } from './Page'
+import { BsPencil } from 'react-icons/bs'
 
 export const Coursework = () => {
   return (
@@ -26,5 +26,5 @@ export const Coursework = () => {
         </li>
       </ul>
     </Page>
-  );
-};
+  )
+}

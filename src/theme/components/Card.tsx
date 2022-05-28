@@ -1,10 +1,10 @@
-import React from "react";
-import { Divider, Box, Text } from "@chakra-ui/react";
+import React from 'react'
+import { Divider, Box, Text } from '@chakra-ui/react'
 
 interface ICard {
-  title?: string;
-  content?: string[];
-  footer?: any;
+  title?: string
+  content?: string[]
+  footer?: any
 }
 
 export const Card: React.FC<ICard> = ({ title, content, footer }) => {
@@ -36,5 +36,5 @@ export const Card: React.FC<ICard> = ({ title, content, footer }) => {
         </Box>
       )}
     </Box>
-  );
-};
+  )
+}

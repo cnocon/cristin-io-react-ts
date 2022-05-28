@@ -1,10 +1,10 @@
-import React from "react";
-import { useColorModeValue, Box, Icon } from "@chakra-ui/react";
-import { FaQuoteLeft } from "react-icons/fa";
+import React from 'react'
+import { useColorModeValue, Box, Icon } from '@chakra-ui/react'
+import { FaQuoteLeft } from 'react-icons/fa'
 
 interface IQuote {
-  author?: string;
-  authorDetails?: string;
+  author?: string
+  authorDetails?: string
 }
 
 export const Quote: React.FC<IQuote> = ({
@@ -12,9 +12,9 @@ export const Quote: React.FC<IQuote> = ({
   authorDetails,
   children,
 }) => {
-  const bgColor = useColorModeValue("white", "brand.500");
-  const color = useColorModeValue("black", "white");
-  const quoteColor = useColorModeValue("gray.500", "brand.200");
+  const bgColor = useColorModeValue('white', 'brand.500')
+  const color = useColorModeValue('black', 'white')
+  const quoteColor = useColorModeValue('gray.500', 'brand.200')
   return (
     <Box position="relative" my={4}>
       <Box
@@ -46,5 +46,5 @@ export const Quote: React.FC<IQuote> = ({
         )}
       </Box>
     </Box>
-  );
-};
+  )
+}
