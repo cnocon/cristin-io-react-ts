@@ -1,10 +1,8 @@
-# CRISTIN.IO REBUILD
+# cristin.io rebuild
 
-## GOALS
+In environments other than `production`, running an `npm audit` will result in a "security vulnerability" with the `react-scripts@5.0.1` package.
 
-- Dive deeper into React's advanced features
-- Sharpen my TypeScript skills
-- Adhere to a strict design system, creating documentation in accord with best practices with the design and implementation of User Interface Libraries.
+This doesn't matter and can be ignored. To prove it, move the `react-scripts` package into `devDependencies` in the package.json file, removing and reinstalling the package in its new location, and then verify things are fine by running `npm audit --production`. You will see there are 0 issues.
 
 <!-- This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
