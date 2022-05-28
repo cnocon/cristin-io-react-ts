@@ -13,9 +13,16 @@ import {
   useColorModeValue,
   Divider,
 } from "@chakra-ui/react";
-import { BsList } from "react-icons/bs";
+import {} from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-import { BsHouse, BsBriefcase, BsNewspaper, BsBook } from "react-icons/bs";
+import {
+  BsList,
+  BsHouse,
+  BsBriefcase,
+  BsNewspaper,
+  BsBook,
+  BsBookmark,
+} from "react-icons/bs";
 
 export const MobileNavigation: React.FC = () => {
   const activeBgColor = useColorModeValue("gray.100", "gray.500");
@@ -112,6 +119,24 @@ export const MobileNavigation: React.FC = () => {
               >
                 <BsNewspaper />
                 &nbsp; Articles
+              </Link>
+            </ListItem>
+
+            <ListItem
+              onClick={(e) => {
+                onClose();
+              }}
+            >
+              <Link
+                px={4}
+                as={NavLink}
+                to="/coursework"
+                py={2}
+                display="flex"
+                alignItems="center"
+              >
+                <BsBookmark />
+                Coursework
               </Link>
             </ListItem>
             <Divider />

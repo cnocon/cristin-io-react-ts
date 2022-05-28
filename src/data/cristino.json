@@ -1,0 +1,82 @@
+{
+  "name": "Cristin O'Connor",
+  "profile_name": "cnocon",
+  "profile_url": "https://teamtreehouse.com/profiles/cnocon",
+  "gravatar_url": "https://secure.gravatar.com/avatar/b7d13c99511f7c727718b13f4c0d9728?s=400\u0026d=https%3A%2F%2Fstatic.teamtreehouse.com%2Fassets%2Fcontent%2Fdefault_avatar-ea7cf6abde4eec089a4e03cc925d0e893e428b2b6971b12405a9b118c837eaa2.png\u0026r=pg",
+  "gravatar_hash": "b7d13c99511f7c727718b13f4c0d9728",
+  "badges": [
+    {
+      "id": 49,
+      "name": "Newbie",
+      "url": "https://teamtreehouse.com/profiles/cnocon",
+      "icon_url": "https://achievement-images.teamtreehouse.com/Generic_Newbie.png",
+      "earned_date": "2021-02-23T23:44:37.000Z",
+      "courses": []
+    },
+    {
+      "id": 17344,
+      "name": "Understanding Design Systems",
+      "url": "https://teamtreehouse.com/library/introduction-to-design-systems/understanding-design-systems",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badge_ux-design-patterns_stage2.png",
+      "earned_date": "2022-05-27T05:40:02.000Z",
+      "courses": [
+        {
+          "title": "Introduction to Design Systems",
+          "url": "https://teamtreehouse.com/library/introduction-to-design-systems",
+          "badge_count": 1
+        },
+        {
+          "title": "Understanding Design Systems",
+          "url": "https://teamtreehouse.com/library/introduction-to-design-systems/understanding-design-systems",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 17345,
+      "name": "Visual Design Language",
+      "url": "https://teamtreehouse.com/library/introduction-to-design-systems/visual-design-language",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badge_prototyping-browser_stage2--design-patterns.png",
+      "earned_date": "2022-05-27T06:09:29.000Z",
+      "courses": [
+        {
+          "title": "Introduction to Design Systems",
+          "url": "https://teamtreehouse.com/library/introduction-to-design-systems",
+          "badge_count": 1
+        },
+        {
+          "title": "Visual Design Language",
+          "url": "https://teamtreehouse.com/library/introduction-to-design-systems/visual-design-language",
+          "badge_count": 1
+        }
+      ]
+    }
+  ],
+  "points": {
+    "total": 116,
+    "HTML": 0,
+    "CSS": 0,
+    "Design": 86,
+    "JavaScript": 0,
+    "Ruby": 0,
+    "PHP": 0,
+    "Android": 0,
+    "Development Tools": 0,
+    "Business": 0,
+    "Python": 0,
+    "Java": 0,
+    "Digital Literacy": 0,
+    "C#": 0,
+    "Databases": 0,
+    "Data Analysis": 0,
+    "APIs": 0,
+    "Security": 0,
+    "Go": 0,
+    "Quality Assurance": 0,
+    "Machine Learning": 0,
+    "Learning Resources": 0,
+    "Computer Science": 0,
+    "Equity, Diversity, and Inclusion (EDI)": 0,
+    "21st Century Skills": 0
+  }
+}
