@@ -52,6 +52,7 @@ export const MobileNavigation: React.FC = () => {
           >
             <ListItem
               onClick={(e) => {
+                e.preventDefault()
                 onClose()
               }}
             >
@@ -70,6 +71,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
+                e.preventDefault()
                 onClose()
               }}
             >
@@ -88,6 +90,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
+                e.preventDefault()
                 onClose()
               }}
             >
@@ -106,6 +109,7 @@ export const MobileNavigation: React.FC = () => {
             <Divider />
             <ListItem
               onClick={(e) => {
+                e.preventDefault()
                 onClose()
               }}
             >
@@ -124,6 +128,7 @@ export const MobileNavigation: React.FC = () => {
 
             <ListItem
               onClick={(e) => {
+                e.preventDefault()
                 onClose()
               }}
             >

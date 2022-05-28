@@ -41,8 +41,7 @@
     "removeComments": false,
     "checkJs": true,
     "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
-    "no-use-before-defined": false
+    "emitDecoratorMetadata": false
   },
   "include": ["src"]
   // "include": ["src/**/*.ts", "src/**/*.js", "test/**/*.ts"],

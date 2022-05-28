@@ -41,7 +41,9 @@ export function register(config?: Config) {
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
+        /* eslint-disable */
         checkValidServiceWorker(swUrl, config)
+        /* eslint-enable */
 
         // Add some additional logging to localhost, pointing developers to the
         // service worker/PWA documentation.
@@ -53,7 +55,9 @@ export function register(config?: Config) {
         })
       } else {
         // Is not localhost. Just register service worker
+        /* eslint-disable */
         registerValidSW(swUrl, config)
+        /* eslint-enable */
       }
     })
   }
