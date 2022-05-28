@@ -19,7 +19,7 @@ import { ImageProps } from '@chakra-ui/react';
 export const textStyles = {
   text: {
     lineHeight: '1.62em',
-    fontSize: '3rem',
+    fontSize: '1rem',
     fontWeight: '400',
   },
   caption: {

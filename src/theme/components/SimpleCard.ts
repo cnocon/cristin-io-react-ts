@@ -1,17 +1,17 @@
-import { space } from '../foundations/space'
+import { spaces } from '../foundations/spaces'
 
 export const SimpleCard = {
   baseStyle: ({ colorMode }) => ({
-    bg: colorMode === 'dark' ? 'gray.800' : 'gray.200',
-    color: colorMode === 'dark' ? 'white' : 'black',
-    margin: space['4'],
-    padding: space['4'],
-    shadow: 'lg',
+    margin: spaces['4'],
+    padding: spaces['4'],
+    boxShadow: 'lg',
     borderWidth: '1px',
     borderRadius: 'base',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    bg: colorMode === 'dark' ? 'gray.800' : 'gray.200',
+    color: colorMode === 'dark' ? 'white' : 'black',
   }),
   variants: {
     standard: {},

@@ -40,6 +40,7 @@ export const Home: React.FC = () => {
       <Section icon={FaConciergeBell} title="Services">
         <SimpleGrid columns={3}>
           <SimpleCard
+            variant="standard"
             title="Web Development"
             content={[
               'This is my primary area of expertise after 10+ years in the field.',
@@ -53,6 +54,7 @@ export const Home: React.FC = () => {
             }
           />
           <SimpleCard
+            variant="centered"
             title="Code Tutoring"
             content={[
               'I work with all ages and focus on teaching with compassion.',
@@ -66,6 +68,7 @@ export const Home: React.FC = () => {
             }
           />
           <SimpleCard
+            variant="standard"
             title="Career Mentor"
             content={[
               'Leveraging my 15 years of experience, I can offer advice, skill development roadmaps, interview prep, and more.',

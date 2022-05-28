@@ -1,0 +1,13 @@
+{
+  "prettier.enableDebugLogs": true,
+  "prettier.configPath": "/Users/cristin/Sites/cristin-io-react-ts/cristin-io/.prettierrc",
+  "prettier.ignorePath": "/Users/cristin/Sites/cristin-io-react-ts/cristin-io/.prettierignore",
+  "prettier.jsxSingleQuote": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "autoimport.semicolon": false,
+  "better-comments.highlightPlainText": true,
+  "color-highlight.markerType": "dot-before",
+  "color-highlight.markRuler": false,
+  "color-highlight.matchWords": true
+}

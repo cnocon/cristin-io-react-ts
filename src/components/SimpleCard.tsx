@@ -1,29 +1,23 @@
 import React from 'react'
-import { Divider, Box, Text } from '@chakra-ui/react'
+import { useStyleConfig, Divider, Box, Text } from '@chakra-ui/react'
 
 interface ISimpleCardProps {
   title?: string
   content?: string[]
   footer?: any
+  variant?: string
 }
 
 export const SimpleCard: React.FC<ISimpleCardProps> = ({
   title,
   content,
   footer,
+  variant,
 }) => {
+  const styles = useStyleConfig('SimpleCard', { variant })
+
   return (
-    <Box
-      m={4}
-      p={4}
-      boxShadow="lg"
-      borderWidth="1px"
-      borderRadius="base"
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-      textAlign="center"
-    >
+    <Box __css={styles}>
       <Text mb={4} size="md" textStyle="cardHeading">
         {title}
       </Text>
