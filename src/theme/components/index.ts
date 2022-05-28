@@ -1,11 +1,12 @@
 import { Link } from './Link'
 import { Heading } from './Heading'
-import { Card } from './Card'
+// import { Card } from '../../components/Card'
+import { SimpleCard } from './SimpleCard'
 import { Quote } from './Quote'
 import { Section } from './Section'
 
 const components = {
-  Card,
+  SimpleCard,
   Heading,
   Quote,
   Link,

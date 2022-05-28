@@ -1,5 +1,5 @@
-import React from '.*'
-import { Box, Container, Flex, Divider, Text } from '.*'
+import React from 'react'
+import { Box, Container, Flex, Divider, Text } from '@chakra-ui/react'
 
 export const Footer: React.FC = () => {
   return (

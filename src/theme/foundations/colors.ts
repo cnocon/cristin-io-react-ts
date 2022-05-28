@@ -14,14 +14,8 @@
  */
 export const colors = {
   transparent: 'transparent',
-  black: {
-    light: '#344556',
-    dark: '#efefef',
-  },
-  white: {
-    light: '#ffffff',
-    dark: '#344556',
-  },
+  black: '#000',
+  white: '#fff',
   brand: {
     // 100: "#CBD6E1",
     200: '#84AFDB',

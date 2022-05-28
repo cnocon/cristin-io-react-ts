@@ -1,13 +1,17 @@
 import React from 'react'
 import { Divider, Box, Text } from '@chakra-ui/react'
 
-interface ICard {
+interface ISimpleCardProps {
   title?: string
   content?: string[]
   footer?: any
 }
 
-export const Card: React.FC<ICard> = ({ title, content, footer }) => {
+export const SimpleCard: React.FC<ISimpleCardProps> = ({
+  title,
+  content,
+  footer,
+}) => {
   return (
     <Box
       m={4}
@@ -25,8 +29,8 @@ export const Card: React.FC<ICard> = ({ title, content, footer }) => {
       </Text>
       <Divider mb={4} />
       {content &&
-        content.map((paragraph) => (
-          <Text display="flex" justifySelf="flex-start" as="p">
+        content.map((paragraph, pIndex) => (
+          <Text display="flex" justifySelf="flex-start" as="p" key={pIndex}>
             {paragraph}
           </Text>
         ))}

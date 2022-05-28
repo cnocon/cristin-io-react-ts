@@ -11,7 +11,7 @@ import {
 export const PageTitle: React.FC<{
   title?: string
   icon?: any
-}> = ({ title, icon, children }) => {
+}> = ({ title, icon /*, children*/ }) => {
   // const iconColor = useColorModeValue("gray.300", "gray.700");
   return icon && title ? (
     <Box mb={4}>

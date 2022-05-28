@@ -13,14 +13,18 @@ module.exports = {
   extends: [
     // 'airbnb-typescript/base',
     'airbnb-typescript',
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:prettier/recommended',
     'prettier',
   ],
   ignorePatterns: ['.eslintrc.js'], // Ignore itself to prevent TS errors
-  plugins: ['prettier'],
+  plugins: ['prettier', 'eslint-plugin-import'],
   rules: {
     'one-var': 'off',
-    'import/prefer-default-export': 'off',
     'prettier/prettier': 'error',
+    'import/prefer-default-export': 'off',
+    // 'import/no-extraneous-dependencies': 'off',
   },
 }
