@@ -1,6 +1,6 @@
 import { textStyles } from './textStyles'
 import { typography } from './typography'
 import { breakpoints } from './breakpoints'
-import { spaces } from './spaces'
+import { spacing } from './spacing'
 
-export { spaces, breakpoints, typography, textStyles }
+export { spacing, breakpoints, typography, textStyles }

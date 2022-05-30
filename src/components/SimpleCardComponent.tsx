@@ -1,23 +1,36 @@
 import React from 'react'
-import { useStyleConfig, Divider, Box, Text } from '@chakra-ui/react'
+import {
+  // ChakraComponent,
+  BoxProps,
+  useStyleConfig,
+  useColorMode,
+  Divider,
+  Box,
+  Text,
+} from '@chakra-ui/react'
+import { SimpleCard } from '../theme/components/SimpleCard'
 
-interface ISimpleCardProps {
+interface ISimpleCardProps extends BoxProps {
   title?: string
   content?: string[]
   footer?: any
   variant?: string
+  colorMode?: string
 }
 
-export const SimpleCard: React.FC<ISimpleCardProps> = ({
+// type SimpleCardComponent = ChakraComponent<'div', {}>
+
+export const SimpleCardComponent = ({
   title,
   content,
   footer,
   variant,
-}) => {
-  const styles = useStyleConfig('SimpleCard', { variant })
+}: ISimpleCardProps) => {
+  const { colorMode } = useColorMode()
+  const styles = useStyleConfig('SimpleCard', { variant, colorMode })
 
   return (
-    <Box __css={styles}>
+    <SimpleCard __css={styles}>
       <Text mb={4} size="md" textStyle="cardHeading">
         {title}
       </Text>
@@ -33,6 +46,6 @@ export const SimpleCard: React.FC<ISimpleCardProps> = ({
           {footer}
         </Box>
       )}
-    </Box>
+    </SimpleCard>
   )
 }

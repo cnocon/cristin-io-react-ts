@@ -1,20 +1,27 @@
-import { spaces } from '../foundations/spaces'
+import { spacing } from '../foundations/spacing'
+import { chakra } from '@chakra-ui/react'
 
-export const SimpleCard = {
-  baseStyle: ({ colorMode }) => ({
-    margin: spaces['4'],
-    padding: spaces['4'],
+export const SimpleCard = chakra('div', {
+  baseStyle: (props: any) => ({
+    margin: spacing.space['4'],
+    padding: spacing.space['4'],
     boxShadow: 'lg',
     borderWidth: '1px',
     borderRadius: 'base',
     display: 'flex',
     flexDirection: 'column',
+    textAlign: 'center',
     justifyContent: 'space-between',
-    bg: colorMode === 'dark' ? 'gray.800' : 'gray.200',
-    color: colorMode === 'dark' ? 'white' : 'black',
+    bg: props?.colorMode === 'dark' ? 'gray.800' : 'gray.200',
+    color: props?.colorMode === 'dark' ? 'white' : 'black',
   }),
   variants: {
     standard: {},
-    centered: { textAlign: 'center' },
+    centered: {
+      textAlign: 'center',
+    },
   },
-}
+  defaultProps: {
+    variant: 'standard',
+  },
+})

@@ -2,7 +2,7 @@ import React from 'react'
 import { Page } from './Page'
 import { Quote } from './theme/components/Quote'
 import { Section } from './theme/components/Section'
-import { SimpleCard } from './components/SimpleCard'
+import { SimpleCardComponent } from './components/SimpleCardComponent'
 import {
   Link,
   Box,
@@ -39,7 +39,7 @@ export const Home: React.FC = () => {
       </Heading>
       <Section icon={FaConciergeBell} title="Services">
         <SimpleGrid columns={3}>
-          <SimpleCard
+          <SimpleCardComponent
             variant="standard"
             title="Web Development"
             content={[
@@ -53,7 +53,7 @@ export const Home: React.FC = () => {
               </Text>
             }
           />
-          <SimpleCard
+          <SimpleCardComponent
             variant="centered"
             title="Code Tutoring"
             content={[
@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
               </Text>
             }
           />
-          <SimpleCard
+          <SimpleCardComponent
             variant="standard"
             title="Career Mentor"
             content={[
