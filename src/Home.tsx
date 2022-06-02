@@ -2,7 +2,7 @@ import React from 'react'
 import { Page } from './Page'
 import { Quote } from './theme/components/Quote'
 import { Section } from './theme/components/Section'
-import { SimpleCardComponent } from './components/SimpleCardComponent'
+import { SimpleCard } from './components/SimpleCard'
 import {
   Link,
   Box,
@@ -12,6 +12,7 @@ import {
   SimpleGrid,
   Flex,
   Icon,
+  // DarkMode,
 } from '@chakra-ui/react'
 import { FaConciergeBell } from 'react-icons/fa'
 import { BsHeartFill } from 'react-icons/bs'
@@ -37,11 +38,13 @@ export const Home: React.FC = () => {
           </Flex>
         </Center>
       </Heading>
+
       <Section icon={FaConciergeBell} title="Services">
         <SimpleGrid columns={3}>
-          <SimpleCardComponent
-            variant="standard"
+          {/* <DarkMode> */}
+          <SimpleCard
             title="Web Development"
+            variant="centered"
             content={[
               'This is my primary area of expertise after 10+ years in the field.',
             ]}
@@ -53,8 +56,8 @@ export const Home: React.FC = () => {
               </Text>
             }
           />
-          <SimpleCardComponent
-            variant="centered"
+          {/* </DarkMode> */}
+          <SimpleCard
             title="Code Tutoring"
             content={[
               'I work with all ages and focus on teaching with compassion.',
@@ -67,8 +70,7 @@ export const Home: React.FC = () => {
               </Text>
             }
           />
-          <SimpleCardComponent
-            variant="standard"
+          <SimpleCard
             title="Career Mentor"
             content={[
               'Leveraging my 15 years of experience, I can offer advice, skill development roadmaps, interview prep, and more.',

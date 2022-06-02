@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
   const logoHeight = useBreakpointValue(['34px', '34px', '70px'])
 
   return (
-    <Box w="100%" position="relative" py={4} boxShadow="lg" mb={4}>
+    <Box w="100%" position="relative" py={8} boxShadow="lg" mb={4}>
       <Container w="100%" maxW="8xl">
         <Flex justify="space-between" align="center">
           <Flex direction="row" align="center">

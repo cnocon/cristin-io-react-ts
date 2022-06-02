@@ -25,6 +25,7 @@ module.exports = {
     'one-var': 'off',
     'prettier/prettier': 'error',
     'import/prefer-default-export': 'off',
+    'react/jsx-filename-extension': 'as-needed',
     // 'import/no-extraneous-dependencies': 'off',
   },
 }

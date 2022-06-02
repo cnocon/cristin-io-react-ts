@@ -5,8 +5,8 @@ import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 export const Navigation: React.FC = () => {
   const bgColor = useColorModeValue('brand.700', 'white')
-  const hoverColor = useColorModeValue('brand.700', 'white')
-  const color = useColorModeValue('white', 'brand.700')
+  const hoverColor = useColorModeValue('brand.700', 'brand.500')
+  const color = useColorModeValue('brand.700', 'brand.700')
   return (
     <Flex
       __css={{
@@ -17,9 +17,10 @@ export const Navigation: React.FC = () => {
         },
         '.active:hover': {
           color: hoverColor,
-          backgroundColor: 'transparent',
+          backgroundColor: bgColor,
         },
       }}
+      _hover={{ color: hoverColor }}
       align="center"
       justify="space-around"
       textAlign="right"

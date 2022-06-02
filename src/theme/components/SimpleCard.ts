@@ -1,19 +1,19 @@
+import type { ComponentStyleConfig } from '@chakra-ui/theme'
 import { spacing } from '../foundations/spacing'
-import { chakra } from '@chakra-ui/react'
 
-export const SimpleCard = chakra('div', {
+export const SimpleCardConfig: ComponentStyleConfig = {
   baseStyle: (props: any) => ({
     margin: spacing.space['4'],
     padding: spacing.space['4'],
-    boxShadow: 'lg',
+    boxShadow: 'xl',
     borderWidth: '1px',
     borderRadius: 'base',
+    borderColor: props?.colorMode === 'dark' ? 'transparent' : 'gray.100',
     display: 'flex',
     flexDirection: 'column',
-    textAlign: 'center',
     justifyContent: 'space-between',
-    bg: props?.colorMode === 'dark' ? 'gray.800' : 'gray.200',
-    color: props?.colorMode === 'dark' ? 'white' : 'black',
+    bg: props?.colorMode === 'dark' ? 'gray.300' : 'gray.50',
+    color: props?.colorMode === 'dark' ? 'black' : 'black',
   }),
   variants: {
     standard: {},
@@ -24,4 +24,4 @@ export const SimpleCard = chakra('div', {
   defaultProps: {
     variant: 'standard',
   },
-})
+}
